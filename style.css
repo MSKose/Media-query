@@ -1,4 +1,4 @@
-@import 'theme.css';
+@import './theme.css';
 
 * {
   box-sizing: border-box;
@@ -76,4 +76,38 @@ h1 {
 .cms {
   width: 15%;
   background-color: var(--gri-8);
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        background-color: var(--açık-kırmızı);
+    }
+    h1, .header {
+        color: white;
+    }
+    .fs, .aws, .ds, .cms {
+        width: 50%;
+        margin: 8px 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: var(--mor-1);
+    }
+    .fs, .aws, .ds, .cms {
+        width: 100%;
+        margin: 8px 0px;
+    }
+    .header {
+        display: none;
+    }
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+    .navbar a {
+        display: block;
+        padding: 15px 20px;
+    }
 }
